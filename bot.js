@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const devs = ["460606140666085378"];
+const devs = ["460606140666085378" , "469431534177353730"];
 const adminprefix = ["-"];
 var prefix = "!";  
 
@@ -330,13 +330,15 @@ client.on('message', message => {
                 .setAuthor(message.guild.name, message.guild.iconURL)
         .setDescription(`
 **
----------------------
--[${message.guild.name}]  هذا هو رابط سيرفر
----------------------
+
+-[${message.guild.name}]   رابط سيرفر
+
 -هذا الرابط صالح ل 100 مستخدم فقط
----------------------
+
 -هذا الرابط صالح لمده 24 ساعه فقط
----------------------
+
+-شكراً لتعاونكم
+
 **`)
       message.author.sendEmbed(Embed11)
     }
@@ -392,7 +394,7 @@ message.channel.sendMessage("" + "وعليكم السلام");
 
 
 client.on('message', message => {
-	 if (message.content === "wping") {
+	 if (message.content === "!ping") {
 	  const embed = new Discord.RichEmbed ()
   
   .setColor("#FF0000")
