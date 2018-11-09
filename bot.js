@@ -130,7 +130,7 @@ client.on('guildMemberAdd', Sal => { //By Salto7#4595
     .setThumbnail(Sal.user.avatarURL)
     .setTitle('عضو جديد!')
     .setDescription('')
-    .addField(' 👤  انت رقم',`**[`` ${Sal.guild.memberCount} ``]**`,true)
+    .addField(' 👤  انت رقم',`[`` ${Sal.guild.memberCount} ``]`,true)
     .addField('**وقت إنشاء الحساب**', Sal.user.createdAt, true)
     .setTitle('Welcome to Fămilý.')
     .setColor('RANDOM')
